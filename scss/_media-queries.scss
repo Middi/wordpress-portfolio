@@ -1,0 +1,100 @@
+
+/*----------  Break Point 1 - 880px  ----------*/
+
+@media only screen and (max-width: 880px) {
+    
+    #hero {
+        height: 600px;
+        background-position: top center;
+        background-size:          cover;
+        background-repeat:    no-repeat;
+        background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url('../images/hero-img.jpg');
+        z-index: -1;
+    }
+
+    #hero:after {display: none}
+
+    .text-content {max-width:   100%}
+
+    #portfolio {
+        width:      100%;
+        position: static;
+        margin:   0 auto;
+        box-shadow: none;
+    }
+
+    .card-container {display: block}
+
+    .target:hover { .card {transform: none} }
+
+    .spin {transform: none}
+
+    .card {
+        margin:    0;
+        height: auto;
+        width:  100%;
+        position:    static;
+        margin-bottom: 50px;
+    }
+
+
+    .front, .back {
+        width:      100%;
+        height:     auto;
+        position: static;
+
+        img{width: 100%}
+
+        p {padding: 10px 10px 50px 20px}
+    }
+
+    .back {display: none}
+
+    .hide-desk {display: block}
+
+    #about{margin-top: 60px}
+
+    .left, .right {display: none}
+
+    #carousel {max-width: 100%}
+
+    #skills-slider {
+        max-width: 100%;
+        height:    auto;
+    }
+
+    .slides {
+        display:  flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+    }
+    
+}
+
+
+
+/*----------  Break Point 2 - 500px  ----------*/
+
+@media only screen and (max-width: 500px) {
+
+    #hero { height: 100vh}
+
+    .text-content {
+        margin-top: -250px;
+        h1 {font-size: 1.8rem}
+    }
+
+    .btn-contact, .btn-cv {
+        display:    block;
+        max-width:  180px;
+        margin: 30px auto;
+    }
+
+    .contact-container {display: block}
+
+    .email, .location {text-align: center}
+
+    footer p {font-size: 0.7rem}
+
+}

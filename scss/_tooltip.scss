@@ -1,0 +1,16 @@
+li {position: relative}
+
+li[tooltip]:before {
+  width:   81px;
+  height:  20px;
+  bottom:  12px;
+  display: none;
+  line-height:   26px;
+  padding:      0 8px;
+  position:  absolute;
+  white-space: nowrap;
+  content:     attr(tooltip);
+  color: lighten($black, 15);
+}
+
+li[tooltip]:hover:before {display: block}

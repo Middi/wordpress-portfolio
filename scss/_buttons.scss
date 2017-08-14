@@ -1,0 +1,71 @@
+.btn {
+	background-color: $red;
+	line-height:  	   1em;
+	color: 	       white;
+	font-size:     	  1rem;
+	font-weight:       700;
+    margin:    3em .25em 0;
+    border:    	      none;
+	padding:  	 14px 44px;
+	cursor: 	   pointer;
+    transition: all 0.2s ease;
+	
+	&:active {transform: scale(0.98)}
+	
+	&:hover {background-color: desaturate(darken($red, 8), 4)}
+}
+
+.card .btn-small {
+	bottom: 30px;
+	left: 	 50%;
+	font-size:  0.8rem;
+	width: 		 110px;
+	padding:  14px 0px;
+	position: absolute;
+	margin-left: -55px;
+	background-color: $brand;
+	
+	&:active {transform: scale(0.98)}
+	
+	&:hover {background-color: desaturate(darken($brand, 8), 4)}
+}
+
+
+
+.card .btn-front {
+	bottom: 30px;
+	left: 	 50%;
+	font-size:  0.8rem;
+	width: 		 110px;
+	padding:  14px 0px;
+	margin-left: -55px;
+	background-color: $brand;
+
+	&:active {transform: scale(0.98)}
+	
+	&:hover {background-color: desaturate(darken($brand, 8), 4)}
+}
+
+.btn-contact, .btn-cv {
+	top: 60px;
+	position: 	  relative;
+	border: 2px solid $red;
+
+	&:active {transform: scale(0.98)}
+	
+	&:hover {
+		background-color: desaturate(darken($red, 8), 4);
+		border: 2px solid desaturate(darken($red, 8), 4);
+		color: white;
+	}
+}
+
+.btn-cv {
+	background-color: white;
+	color: desaturate(darken($red, 8), 4);
+	
+	&:hover {
+		background-color: $red;
+		border: 2px solid $red;
+	}
+}
