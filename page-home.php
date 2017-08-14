@@ -3,7 +3,9 @@
     Template Name: Home Page
 */
 
+
 get_header(); ?>
+
 
 
 <main>
@@ -28,69 +30,39 @@ get_header(); ?>
         <section id="portfolio">
             <h3>Projects</h3>
             <div class="card-container">
+
+                <?php global $query_string;
+                query_posts ('posts_per_page=3');
+                while(have_posts()) : the_post(); ?>
+
+                    <div class="outer">
+                        <div class="target">
+                            <div class="card">
+                                <div class="front">
+
+                                    <div class="thumbnail" <?php
+                                    if ( $id = get_post_thumbnail_id() ) {
+                                        if ( $src = wp_get_attachment_url( $id ) )
+                                        printf( ' style="background-image: url(%s);"', $src );
+                                    }
+                                    ?>>
+                                    </div>
+
+                                    <h5><?php the_title(); ?></h5><?php the_excerpt('Read More'); ?>
+                                    <a href="#" class="btn  btn-front hide-desk">View Site</a>
+                                </div>
+                                
+                                <div class="back">
+                                    <h5><?php the_title(); ?></h5>
+                                    <hr>
+                                    <p class="return"><?php the_content(); ?></p>
+                                    <a href="#" class="btn btn-small">View Site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
                 
-                              
-                <div class="outer">
-                    <div class="target">
-                        <div class="card">
-                            <div class="front">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/amazon.png" alt="">
-                                <h5>Amazon Re-design</h5>
-                                <p>Mobile responsive site, designed by Josh Millgate.</p>
-                                <a href="#" class="btn  btn-front hide-desk">View Site</a>
-                            </div>
-                            
-                            <div class="back">
-                                <h5>Amazon Re-design</h5>
-                                <hr>
-                                <p class="return">Mobile responsive site created from a design by Josh Millgate, Using HTML, SCSS, Jquery & Javascript.</p>
-                                <a href="#" class="btn btn-small">View Site</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                              
-                <div class="outer">
-                    <div class="target">
-                        <div class="card">
-                            <div class="front">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/amazon.png" alt="">
-                                <h5>Amazon Re-design</h5>
-                                <p>Mobile responsive site, designed by Josh Millgate.</p>
-                                <a href="#" class="btn  btn-front hide-desk">View Site</a>
-                            </div>
-                            
-                            <div class="back">
-                                <h5>Amazon Re-design</h5>
-                                <hr>
-                                <p class="return">Mobile responsive site created from a design by Josh Millgate, Using HTML, SCSS, Jquery & Javascript.</p>
-                                <a href="#" class="btn btn-small">View Site</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                              
-                <div class="outer">
-                    <div class="target">
-                        <div class="card">
-                            <div class="front">
-                                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/amazon.png" alt="">
-                                <h5>Amazon Re-design</h5>
-                                <p>Mobile responsive site, designed by Josh Millgate.</p>
-                                <a href="#" class="btn btn-front hide-desk">View Site</a>
-                            </div>
-                            
-                            <div class="back">
-                                <h5>Amazon Re-design</h5>
-                                <hr>
-                                <p class="return">Mobile responsive site created from a design by Josh Millgate, Using HTML, SCSS, Jquery & Javascript.</p>
-                                <a href="#" class="btn btn-small">View Site</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <a href="#" class="btn">View More</a>
 

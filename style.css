@@ -42,7 +42,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 
-	
+*/
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -339,13 +340,6 @@ object {
 /*=============================================
 =                Stylesheet Main              =
 =============================================*/
-/*----------  Imports  ----------*/
-/*--- Font Awesome ---*/
-/* @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; */
-/*--- Dev Icons ---*/
-@import "https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css";
-/*--- Local Imports ---*/
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -399,7 +393,7 @@ button {
 /*=============================================
 =                  Typography                 =
 =============================================*/
-*, h1, h2, h3, h4, h5, h6, p, a, small {
+h1, h2, h3, h4, h5, h6, p, a, small {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8); }
@@ -565,8 +559,15 @@ a, .fa, button {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.17); }
-  .front img, .back img {
-    width: 240px; }
+
+  .thumbnail {
+	height: 167px;
+	background-position: top center;
+	background-size:          cover;
+	background-repeat:    no-repeat;
+}
+
+
   .front h5, .front a, .back h5, .back a {
     padding: 30px 20px 0 20px;
     font-weight: 400; }
@@ -818,8 +819,11 @@ footer {
     width: 100%;
     height: auto;
     position: static; }
-    .front img, .back img {
-      width: 100%; }
+
+	.thumbnail {
+		height: 300px;
+	}
+
     .front p, .back p {
       padding: 10px 10px 50px 20px; }
 

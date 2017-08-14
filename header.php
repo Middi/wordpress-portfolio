@@ -21,6 +21,8 @@
 
 	<link href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
 
 	<?php wp_head(); ?>
 </head>
