@@ -393,7 +393,7 @@ button {
 /*=============================================
 =                  Typography                 =
 =============================================*/
-h1, h2, h3, h4, h5, h6, p, a, small {
+li, h1, h2, h3, h4, h5, h6, p, a, small {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8); }
@@ -782,7 +782,7 @@ footer {
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url("/images/hero-img.jpg");
+	background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url("/images/hero-img.jpg");
     z-index: -1; }
 
   #hero:after {
@@ -821,7 +821,8 @@ footer {
     position: static; }
 
 	.thumbnail {
-		height: 300px;
+		width: 100%;
+		min-height: 200px;
 	}
 
     .front p, .back p {

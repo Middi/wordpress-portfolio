@@ -4,7 +4,7 @@
 */
 
 
-get_header(); ?>
+define( 'WP_USE_THEMES', false ); get_header(); ?>
 
 
 
@@ -31,9 +31,9 @@ get_header(); ?>
             <h3>Projects</h3>
             <div class="card-container">
 
-                <?php global $query_string;
-                query_posts ('posts_per_page=3');
-                while(have_posts()) : the_post(); ?>
+
+            <?php query_posts( 'posts_per_page=3' ); ?>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                     <div class="outer">
                         <div class="target">
@@ -42,10 +42,11 @@ get_header(); ?>
 
                                     <div class="thumbnail" <?php
                                     if ( $id = get_post_thumbnail_id() ) {
-                                        if ( $src = wp_get_attachment_url( $id ) )
+                                        if ( $src = wp_get_attachment_url($id) )
                                         printf( ' style="background-image: url(%s);"', $src );
-                                    }
+                                    } 
                                     ?>>
+                                    
                                     </div>
 
                                     <h5><?php the_title(); ?></h5><?php the_excerpt('Read More'); ?>
@@ -61,8 +62,11 @@ get_header(); ?>
                             </div>
                         </div>
                     </div>
-                <?php endwhile; ?>
-                
+            
+            <?php endwhile; else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <?php endif; ?>
+
 
                 <a href="#" class="btn">View More</a>
 
