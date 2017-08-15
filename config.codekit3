@@ -484,6 +484,24 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/template-parts\/content-about.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-about.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-contact.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-contact.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-hero.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-hero.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-none.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -496,10 +514,22 @@
 		"oAP": "\/template-parts\/content-page.php",
 		"oF": 0
 		},
+	"\/template-parts\/content-portfolio.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-portfolio.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-search.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-search.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-skills.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-skills.php",
 		"oF": 0
 		},
 	"\/template-parts\/content.php": {
