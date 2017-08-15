@@ -87,7 +87,7 @@ define( 'WP_USE_THEMES', false ); get_header(); ?>
             <div class="button-container">
                 <a href="#contact" class="btn btn-contact">Contact</a>
                 
-                <a href="#" class="btn btn-cv">Resume</a>
+                <a href="http://rm.local:5757/wordpress-3/wp-content/uploads/2017/08/Richard-Middleton.pdf" class="btn btn-cv" target="_blank">Resume</a>
             </div>
         </section>
 
