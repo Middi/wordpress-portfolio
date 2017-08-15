@@ -639,7 +639,7 @@ body {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url("/images/hero-img.jpg");
+  background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url("images/hero-img.jpg");
   -webkit-transform-origin: top left;
           transform-origin: top left;
   -webkit-transform: skewY(-4deg);
@@ -782,7 +782,7 @@ footer {
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-	background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url("/images/hero-img.jpg");
+	background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url("images/hero-img.jpg");
     z-index: -1; }
 
   #hero:after {

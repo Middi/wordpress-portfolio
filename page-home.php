@@ -57,18 +57,20 @@ define( 'WP_USE_THEMES', false ); get_header(); ?>
                                     <h5><?php the_title(); ?></h5>
                                     <hr>
                                     <p class="return"><?php the_content(); ?></p>
-                                    <a href="#" class="btn btn-small">View Site</a>
+                                    
+                                    <a href="<?php the_field('link'); ?>" class="btn btn-small">View Site</a>
                                 </div>
                             </div>
                         </div>
                     </div>
             
+
             <?php endwhile; else : ?>
             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-            <?php endif; ?>
+            <?php endif; wp_reset_query(); ?>
 
 
-                <a href="#" class="btn">View More</a>
+                <a href="http://github.com/middi" class="btn">View More</a>
 
             </div>
         </section>
