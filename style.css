@@ -812,7 +812,7 @@ footer {
 		box-shadow: none;
 	}
 
-	.card-container {display: block}
+	.card-container {display: block;}
 
 	.target:hover .card {
 		-webkit-transform: none;
@@ -825,9 +825,10 @@ footer {
 	}
 	
 	.card {
-		margin: 0;
 		height: auto;
-		width: 100%;
+		width: auto;
+		max-width: 500px;
+		margin: 0 auto;
 		position: static;
 		margin-bottom: 50px;
 	}
@@ -840,7 +841,7 @@ footer {
 
 	.thumbnail {
 		width: 100%;
-		min-height: 200px;
+		height: 260px;
 	}
 	
 	.front p, .back p {padding: 10px 10px 50px 20px}
@@ -884,6 +885,8 @@ footer {
 	.text-content {margin-top: -250px}
 
 	.text-content h1 {font-size: 1.8rem}
+
+	.thumbnail {height: 200px}
 
 	.btn-contact, .btn-cv {
 		display: block;
