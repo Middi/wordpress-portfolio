@@ -7,45 +7,29 @@
 define( 'WP_USE_THEMES', false ); get_header(); ?>
 
 
-
 <main>
 
-
-        <!--===========================
-                   Jumbotron
-        ============================-->
+        <!--====== Jumbotron =======-->
 
         <?php get_template_part( 'template-parts/content', 'hero' ); ?>
 
-
-        <!--===========================
-                  Portfolio
-        ============================-->
+         <!--====== Portfolio =======-->
         
         <?php get_template_part( 'template-parts/content', 'portfolio' ); ?>
 
-
-        <!--===========================
-                    About
-        ============================-->
+         <!--====== About =======-->
         
         <?php get_template_part( 'template-parts/content', 'about' ); ?>
 
-
-        <!--===========================
-                    Skills
-        ============================-->
+         <!--====== Skills =======-->
         
         <?php get_template_part( 'template-parts/content', 'skills' ); ?>
 
-
-        <!--===========================
-                   Contact
-        ============================-->
+         <!--====== Contact =======-->
 
         <?php get_template_part( 'template-parts/content', 'contact' ); ?>
 
-    </main>
+</main>
 
 
 
