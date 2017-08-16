@@ -320,8 +320,6 @@ input, select {
 
 a:focus, button:focus {outline: none}
 
-button {cursor: pointer}
-  
 
 /*=============================================
 =                  Typography                 =
@@ -381,6 +379,13 @@ a, .fa, button {cursor: pointer}
   margin-bottom: 0;
 }
 
+hr {
+    height: 1px;
+    margin: 6px 20px;
+    border: none;
+	background-color: #3b92f8;
+}
+
 .light span, .light a {color: white}
 
 .light span a:hover, .light a a:hover {color: #ebebeb}
@@ -421,12 +426,12 @@ a, .fa, button {cursor: pointer}
   background-color: #3b92f8;
 }
 
-.card .btn-small:active {
+.btn-small:active {
 	-webkit-transform: scale(0.98);
 			transform: scale(0.98);
 }
 
-.card .btn-small:hover {background-color: #187cf2}
+.btn-small:hover {background-color: #187cf2}
 
 .card .btn-front {
   bottom: 30px;
@@ -438,12 +443,12 @@ a, .fa, button {cursor: pointer}
   background-color: #3b92f8;
 }
 
-.card .btn-front:active {
+.btn-front:active {
 	-webkit-transform: scale(0.98);
 			transform: scale(0.98);
 }
 
-.card .btn-front:hover {background-color: #187cf2}
+.btn-front:hover {background-color: #187cf2}
 
 .btn-contact, .btn-cv {
   top: 60px;
@@ -558,13 +563,6 @@ a, .fa, button {cursor: pointer}
 
 .front a, .back a {text-align: center}
 
-.front hr, .back hr {
-    height: 1px;
-    margin: 6px 20px;
-    border: none;
-	background-color: #3b92f8;
-}
-
 .back {
 	-webkit-transform: rotateY(180deg);
 			transform: rotateY(180deg);
@@ -618,6 +616,7 @@ body {background-color: #fafafa}
 	align-items: center;
 	position: relative;
 }
+
 #hero:after {
 	top: 0;
 	left: 0;
