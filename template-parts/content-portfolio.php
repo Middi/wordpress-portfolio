@@ -20,15 +20,15 @@
                             
                             </div>
 
-                            <h5><?php the_title(); ?></h5><?php the_excerpt('Read More'); ?>
-                            <a href="#" class="btn  btn-front hide-desk">View Site</a>
+                            <h5><?php the_title(); ?></h5>
+                            <?php the_excerpt('Read More'); ?>
+                            <a href="<?php the_field('link'); ?>"  class="btn  btn-front hide-desk">View Site</a>
                         </div>
                         
                         <div class="back">
                             <h5><?php the_title(); ?></h5>
                             <hr>
-                            <p class="return"><?php the_content(); ?></p>
-                            
+                            <?php the_content(); ?>
                             <a href="<?php the_field('link'); ?>" class="btn btn-small">View Site</a>
                         </div>
                     </div>
