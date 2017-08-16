@@ -780,8 +780,9 @@ footer {
 	-ms-flex-align   : center;
 }
 
-.ul-footer{text-align: center;
-	margin: 20px 0;
+.ul-footer {
+	text-align: center;
+	margin	  : 20px 0;
 }
 
 .social {
@@ -798,7 +799,10 @@ footer {
 
 .fa-2x:hover {opacity: 1}
 
-.copyright {color: white}
+.copyright {
+	color: white;
+	text-align: center;
+}
 
 /*=============================================
 =                Media Queries                =
@@ -914,7 +918,7 @@ footer {
 
 	.email, .location {text-align: center}
 
-	footer p {font-size: 0.7rem}
+	.fa-2x {font-size: 3rem}
 
 }
 
