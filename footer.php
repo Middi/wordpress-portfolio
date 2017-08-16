@@ -43,7 +43,7 @@
                     </a>
                 </li>
             </ul>
-            
+
             <p class="copyright">Designed & Coded by <strong>Richard Middleton.</strong></p>
                     
         </div>
@@ -51,7 +51,7 @@
 
 
     <!--===========================
-              Javascript
+               Scripts
     ============================-->
 
     <!-- jQuery -->
@@ -60,7 +60,7 @@
     <!-- Javascript -->
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js" type="text/javascript"></script>
 
-<?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 
-</body>
+    </body>
 </html>
