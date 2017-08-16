@@ -23,10 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
+
 # Navigation
 	## Links
 	## Menus
@@ -368,6 +365,8 @@ p {
   line-height  : 1.4;
   margin-bottom: 24px;
 }
+
+strong {font-weight: 700}
 
 small {font-size: 12px}
 
@@ -773,7 +772,7 @@ footer {
 	display          : -webkit-box;
 	display          : -ms-flexbox;
 	display          : flex;
-	height           : 46px;
+	height           : 200px;
 	justify-content  : center;
 	-webkit-box-pack : center;
 	-ms-flex-pack    : center;
@@ -781,7 +780,25 @@ footer {
 	-ms-flex-align   : center;
 }
 
+.ul-footer{text-align: center;
+	margin: 20px 0;
+}
 
+.social {
+	list-style-type: none;
+	display        : inline;
+	padding        : 16px;
+}
+
+.fa-2x {
+	color     : white;
+	opacity	  : 0.8;
+	transition: all 0.4s ease;
+}
+
+.fa-2x:hover {opacity: 1}
+
+.copyright {color: white}
 
 /*=============================================
 =                Media Queries                =
