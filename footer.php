@@ -20,21 +20,30 @@
 
             <ul class="ul-footer">
                 <li class="social">
-                    <a href="http://twitter.com/richardcodes"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a href="http://twitter.com/richardcodes">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
                 </li>
                     
                 <li class="social">
-                    <a href="https://www.linkedin.com/in/richard-middleton/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/richard-middleton/">
+                        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                    </a>
                 </li>
                     
                 <li class="social">
-                    <a href="http://instagram.com/richardcodes"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href="http://instagram.com/richardcodes">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
                 </li>
                     
                 <li class="social">
-                    <a href="http://github.com/middi"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    <a href="http://github.com/middi">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    </a>
                 </li>
             </ul>
+            
             <p class="copyright">Designed & Coded by <strong>Richard Middleton.</strong></p>
                     
         </div>
