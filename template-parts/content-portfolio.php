@@ -40,8 +40,6 @@
     <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; wp_reset_query(); ?>
 
-
-        <a href="http://github.com/middi" class="btn">View More</a>
-
     </div>
+        <a href="/projects" class="btn">View More</a>
 </section>

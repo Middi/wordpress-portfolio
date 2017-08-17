@@ -493,7 +493,7 @@ hr {
 	justify-content  : center;
 	-ms-flex-pack    : center;
 	-webkit-box-pack : center;
-	margin-top       : 30px;
+	margin-top       : 70px;
 }
 
 .outer {
@@ -515,7 +515,7 @@ hr {
 .card {
 	cursor    : pointer;
 	height    : 300px;
-	margin    : 15px;
+	margin    : -30px 15px 70px;
 	position  : relative;
 	transform-style		   : preserve-3d;
 	-webkit-transform-style: preserve-3d;
@@ -549,7 +549,7 @@ hr {
 
 .front h5, .front a, .back h5, .back a {
 	font-weight: 400;
-    padding    : 30px 20px 0 20px;
+    padding    : 20px 20px 0 20px;
 }
 
 .front p, .back p {
@@ -602,7 +602,7 @@ li[tooltip]:hover:before {display: block}
 body {background-color: #fafafa}
 
 #hero {
-	align-items      : center;
+	align-items        : center;
 	background-position: top center;
 	background-repeat  : no-repeat;
 	background-size    : cover;
@@ -634,6 +634,28 @@ body {background-color: #fafafa}
 	transform               : skewY(-3deg);
 	width   : 100%;
 	z-index: -1;
+}
+
+.hero {
+	background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url('images/hero-img.jpg'); 
+	background-position: top center;
+	background-repeat  : no-repeat;
+	background-size    : cover;
+	height           : 250px;
+	z-index: -2;
+}
+
+.text-content-projects {
+	max-width : 590px;
+	padding   : 30px;
+	text-align: center;
+	transition: opacity 0.1s ease-in-out;
+}
+
+.text-content-projects img {
+	height: auto;
+	margin-bottom: 10px;
+	width : 80px;
 }
 
 .container {
@@ -668,6 +690,19 @@ body {background-color: #fafafa}
 	position        : absolute;
 	text-align      : center;
 	top             : 450px;
+}
+
+.portfolio {
+	background-color: white;
+	border          : 1px solid #e0e0e0;
+	border-radius   : 4px;
+	box-shadow: 0 10px 14px -6px #c7c7c7;
+	box-sizing      : border-box;
+	height: auto;
+	margin: -120px auto 200px;
+	max-width       : 872px;
+	padding         : 30px 30px 60px;
+	text-align      : center;
 }
 
 #about, #skills, #contact {
@@ -800,7 +835,7 @@ footer {
 
 .fa-2x:hover {opacity: 1}
 
-.copyright {
+.copyright, .a-footer {
 	color: white;
 	text-align: center;
 }

@@ -12,45 +12,76 @@
  * @package Portfolio
  */
 
-get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-		<?php
-		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
 
-			<?php
-			endif;
+ define( 'WP_USE_THEMES', false ); get_header(); ?>
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+<main>
 
-			endwhile;
+<section class="hero">
 
-			the_posts_navigation();
+    <div class="container">
+        <div class="text-content-projects">
+            <a href="http://richardmiddleton.me"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/avatar.png" alt=""></a>
+        </div>
+    </div>
+</section>
+	   
+		
+	<section class="portfolio">
+		<h3>Projects</h3>
+		<div class="card-container">
 
-		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+		<?php query_posts( 'posts_per_page=-1' ); ?>
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		endif; ?>
+				<div class="outer">
+					<div class="target">
+						<div class="card">
+							<div class="front">
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+								<div class="thumbnail" <?php
+								if ( $id = get_post_thumbnail_id() ) {
+									if ( $src = wp_get_attachment_url($id) )
+									printf( ' style="background-image: url(%s);"', $src );
+								} 
+								?>>
+								
+								</div>
 
-<?php
-get_sidebar();
-get_footer();
+								<h5><?php the_title(); ?></h5>
+								<?php the_excerpt('Read More'); ?>
+								<a href="<?php the_field('link'); ?>"  class="btn  btn-front hide-desk">View Site</a>
+							</div>
+							
+							<div class="back">
+								<h5><?php the_title(); ?></h5>
+								<hr>
+								<?php the_content(); ?>
+								<a href="<?php the_field('link'); ?>" class="btn btn-small">View Site</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		
+
+		<?php endwhile; else : ?>
+		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+		<?php endif; wp_reset_query(); ?>
+
+
+
+		</div>
+			<a href="http://github.com/middi" class="btn">View On Github</a>
+	</section>
+
+
+</main>
+
+
+
+<?php get_footer();

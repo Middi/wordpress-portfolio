@@ -44,7 +44,7 @@
                 </li>
             </ul>
 
-            <p class="copyright">Designed & Coded by <strong>Richard Middleton.</strong></p>
+            <p class="copyright">Designed & Coded by <a class="a-footer" href="http://richardmiddleton.me"><strong>Richard Middleton.</strong></a></p>
                     
         </div>
     </footer>
