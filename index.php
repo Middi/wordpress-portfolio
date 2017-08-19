@@ -14,21 +14,19 @@
 
 
 
-
-
  define( 'WP_USE_THEMES', false ); get_header(); ?>
 
 
 <main>
 
-<section class="hero">
+	<section class="hero">
 
-    <div class="container">
-        <div class="text-content-projects">
-            <a href="http://richardmiddleton.me"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/avatar.png" alt=""></a>
-        </div>
-    </div>
-</section>
+		<div class="container">
+			<div class="text-content-projects">
+				<a href="http://richardmiddleton.me"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/avatar.png" alt=""></a>
+			</div>
+		</div>
+	</section>
 	   
 		
 	<section class="portfolio">
