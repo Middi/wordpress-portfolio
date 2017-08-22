@@ -72,7 +72,6 @@
 		<?php endif; wp_reset_query(); ?>
 
 
-
 		</div>
 			<a href="http://github.com/middi" class="btn">View On Github</a>
 	</section>
