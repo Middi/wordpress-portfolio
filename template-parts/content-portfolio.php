@@ -41,5 +41,5 @@
     <?php endif; wp_reset_query(); ?>
 
     </div>
-        <a href="/projects" class="btn">View More</a>
+        <a href="/Projects" class="btn">View More</a>
 </section>
