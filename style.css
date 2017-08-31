@@ -476,7 +476,6 @@ hr {
 }
 
 
-
 /*=============================================
 =                	 Cards                    =
 =============================================*/
@@ -643,6 +642,7 @@ body {background-color: #fafafa}
 	background-size    : cover;
 	height           : 250px;
 	z-index: -2;
+	position: relative;
 }
 
 .text-content-projects {
@@ -701,7 +701,7 @@ body {background-color: #fafafa}
 	height: auto;
 	margin: -120px auto 200px;
 	max-width       : 872px;
-	padding         : 30px 30px 60px;
+	padding         : 30px 30px 160px;
 	text-align      : center;
 }
 
@@ -839,6 +839,37 @@ footer {
 	color: white;
 	text-align: center;
 }
+
+
+
+/*=============================================
+=              Project specific              =
+=============================================*/
+
+.back-button {
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	z-index: 22;
+}
+
+.back-button a {
+	color: white;
+	font-weight: 700;
+}
+.back-button:hover {
+	text-decoration: underline;
+}
+
+.fa-chevron-left {
+	color: white;
+	opacity: 1;
+}
+
+.portfolio .button-container {
+	margin-top: 40px;
+}
+
 
 /*=============================================
 =                Media Queries                =

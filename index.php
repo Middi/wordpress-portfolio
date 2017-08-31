@@ -30,6 +30,7 @@
 	   
 		
 	<section class="portfolio">
+		<div class="back-button"><a href="/"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a></div>
 		<h3>Projects</h3>
 		<div class="card-container">
 
@@ -73,7 +74,14 @@
 
 
 		</div>
-			<a href="http://github.com/middi" class="btn">View On Github</a>
+		<a href="http://github.com/middi" class="btn btn-git">View On Github</a>
+
+		<div class="button-container">
+        	<a href="/#contact" class="btn btn-contact">Contact</a>
+        
+        	<a href="http://richardmiddleton.me/wp-content/uploads/2017/08/Richard-Middleton.pdf" class="btn btn-cv" target="_blank">Resume</a>
+		</div>
+	
 	</section>
 
 
