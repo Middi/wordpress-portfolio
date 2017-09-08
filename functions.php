@@ -117,7 +117,22 @@ add_action( 'widgets_init', 'portfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function portfolio_scripts() {
+
+	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400,700', true ); 
+
+	wp_enqueue_style( 'dev-icons', 'https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css', true ); 
+
+	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', true ); 
+
 	wp_enqueue_style( 'portfolio-style', get_stylesheet_uri() );
+	
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', ('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'), false, null, true);
+	wp_enqueue_script('jquery');
+
+
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
+
 
 	wp_enqueue_script( 'portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

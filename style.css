@@ -373,7 +373,7 @@ small {font-size: 12px}
 a, .fa, button {cursor: pointer}
 
 .light {
-  color        : rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 0;
 }
 
@@ -866,7 +866,7 @@ footer {
 	text-decoration: underline;
 }
 
-.fa-chevron-left {
+.fa-chevron-left .fa-project {
 	color: white;
 	opacity: 1;
 }
@@ -874,7 +874,6 @@ footer {
 .portfolio .button-container {
 	margin-top: 40px;
 }
-
 
 
 
@@ -1045,10 +1044,7 @@ footer {
 	.menu-toggle {display: none}
 
 	.main-navigation ul {display: block}
-
 }
-
-
 
 
 @media only screen and (max-height: 725px) {

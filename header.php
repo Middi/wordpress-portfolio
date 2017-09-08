@@ -18,13 +18,9 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 
 		<meta name="google-site-verification" content="NOocQr42J5FZ3eg69boUdEGpcWyK4--saSqF9VCSAGw" />
-
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-		<link href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css" rel="stylesheet">
-
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-
+		<meta name="description" content="Richard Middleton, Web Developer from Leeds, UK."/>
+		<meta property="og:description" content="Richard Middleton, Web Developer from Leeds, UK." />
+		<meta property="og:image" content="https://richardmiddleton.me/wp-content/themes/portfolio/images/meta.jpg" />
 
 		<?php wp_head(); ?>
 	</head>

@@ -68,7 +68,7 @@
 		},
 	"\/images\/avatar.png": {
 		"ft": 32768,
-		"iS": 135608,
+		"iS": 29162,
 		"oA": 0,
 		"oAP": "\/images\/avatar.png",
 		"oF": 0,
@@ -107,6 +107,16 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"\/images\/meta.jpg": {
+		"ft": 16384,
+		"iS": 22395,
+		"oA": 0,
+		"oAP": "\/images\/meta.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/images\/portfolio.psd": {
@@ -167,12 +177,32 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/main-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/main.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/navigation-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/navigation-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

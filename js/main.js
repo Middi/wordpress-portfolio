@@ -44,7 +44,6 @@ $(document).ready(function () {
         }
     });
 
-
     // ===========================
     // Spin Cards On Load
     // ===========================
@@ -54,7 +53,6 @@ $(document).ready(function () {
             $('.card').addClass('spin');
         }
     }, 2000);
-
 
 
     // ===========================

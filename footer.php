@@ -49,17 +49,6 @@
         </div>
     </footer>
 
-
-    <!--===========================
-               Scripts
-    ============================-->
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Javascript -->
-    <script src="<?php bloginfo('template_directory'); ?>/js/main.js" type="text/javascript"></script>
-
     <?php wp_footer(); ?>
 
     </body>
