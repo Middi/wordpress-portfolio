@@ -7,6 +7,10 @@
  * @package Portfolio
  */
 
+ // REMOVE EMOJI ICONS
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
 if ( ! function_exists( 'portfolio_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -131,10 +135,10 @@ function portfolio_scripts() {
 	wp_enqueue_script('jquery');
 
 
-	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main-min.js', array(), '1.0.0', true );
 
 
-	wp_enqueue_script( 'portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'portfolio-navigation', get_template_directory_uri() . '/js/navigation-min.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'portfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
